@@ -45,7 +45,7 @@ Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
 package com.leetcode.arrays;
 
-public class MergeSortedArraySol {
+public class LC88_MergeSortedArraySol {
 	
 public void merge(int[] nums1, int m, int[] nums2, int n) {
 	int p1 = m-1, p2 = n-1,i = m+n-1;
