@@ -27,37 +27,37 @@ Example 2:
 Input: nums = [2,3,0,1,4]
 Output: 2
 *****/
- 
- package com.leetcode.arrays;
+
+package com.leetcode.arrays;
 
 public class LC45_JumpCodeII {
-	
-	public int jump(int[] nums) {
-	      int totaljumps = 0;
-	      int destination = nums.length-1;
-	      int lastJumpInd = 0;
-	      int coverage = 0;
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      return totaljumps;
-	    }
 
+	public static int jump(int[] nums) {
+		int totaljumps = 0;
+		int destination = nums.length - 1;
+		int lastJumpInd = 0;
+		int coverage = 0;
+		if (nums.length - 1 == 0) {
+			return 0;
+		}
+		for (int i = 0; i < nums.length; i++) {
+			coverage = Math.max(coverage, i + nums[i]);
+			if (i == lastJumpInd) {
+				lastJumpInd = coverage;
+				totaljumps++;
+				if (coverage >= destination) {
+					return totaljumps;
+				}
+
+			}
+		}
+		return totaljumps;
+	}
+
+	public static void main(String[] args) {
+		int[] stocks = { 2,3,1,1,4};
+		int test = jump(stocks);
+		System.out.println(" Number of Jumps: " + test);
+
+	}
 }
