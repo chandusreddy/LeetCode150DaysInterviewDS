@@ -39,7 +39,6 @@ public class LC55_JumpCode {
 			}
 
 		}
-
 		return LastgoodIndexPos == 0;
 
 	}
