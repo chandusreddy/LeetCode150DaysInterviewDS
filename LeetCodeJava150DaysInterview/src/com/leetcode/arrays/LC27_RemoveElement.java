@@ -65,7 +65,7 @@ Constraints:
 package com.leetcode.arrays;
 
 
-public class LC27_RemoveElementSol {
+public class LC27_RemoveElement {
 
 
 	public int removeElement(int[] nums, int val) {
